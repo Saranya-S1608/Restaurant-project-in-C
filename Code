@@ -1,0 +1,184 @@
+#include<stdio.h>
+void tf(); void ln(); void veg();void tf1(); void ln1(); void dn1();
+void dn(); void des(); void non_veg(); void bill(int); 
+int main()
+{   int m,p;
+    printf("................]**WELCOME TO BAVA HOTEL**[...................\n");
+    printf("1.Veg\n");
+    printf("2.Non_Veg\n");
+    printf("3.Desserts\n");
+    printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+    scanf("%d",&m);
+    switch(m){
+        case 1:  veg();break;
+        case 2:  non_veg();break;
+        case 3:  des();break;
+        default: printf("Invalid Choice");
+    }
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    printf("1.Do you want anything else\n");
+    printf("2.Exit\n");
+    printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+    scanf("%d",&p);
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    if(p==1) return main();
+    else { printf(".....................]Thank you[..........................");
+          return 0; 
+    }
+}
+void veg(){
+   
+    printf("1.Tiffen\n");
+    printf("2.Lunch\n");
+    printf("3.Dinner\n");
+    printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+     int n;
+    scanf("%d",&n);
+    switch(n){
+        case 1:   tf();break;
+        case 2:   ln();break;
+        case 3:   dn();break;
+        default :printf("Invalid Choice");
+    }
+}
+void tf(){
+        int k,n;
+        printf("1.Idly        -Rs.8\n");
+        printf("2.Dosa        -Rs.15\n");
+        printf("3.Pongal      -Rs.30\n");
+        printf("4.Poori       -Rs.20\n");
+        printf("5.Paniyaaram  -Rs.20\n");
+        printf("6.Chappathi   -Rs.10\n");
+        printf("7.Idiyappam   -Rs.30\n");
+        printf("8.vada        -Rs.5\n");
+        printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&k);
+        int a[]={8,15,30,20,20,10,30,5};
+        printf("Quantity: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&n);
+        int tot=a[k-1]*n;
+       printf("Total bill: %d\n",tot);
+}
+    void ln(){
+        int k,n;
+        printf("1.Meals                   -Rs.50\n");
+        printf("2.variety rice            -Rs.40\n");
+        printf("3.Veg-biriyani            -Rs.90\n");
+        printf("4.Mushroom biriyani       -Rs.90\n");
+        printf("5.Veg-noodles             -Rs.70\n");
+        printf("6.Veg-fried rice          -Rs.70\n");
+        printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&k);
+        int a[]={50,40,90,90,70,70};
+        printf("Quantity: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&n);
+        int tot=a[k-1]*n;
+        printf("Total bill: %d\n",tot);
+}
+void dn(){
+        int k,n;
+        printf("1.Parotta                 -Rs.20\n");
+        printf("2.Naan                    -Rs.60\n");
+        printf("3.Chilli parotta          -Rs.50\n");
+        printf("4.Mushroom biriyani       -Rs.60\n");
+        printf("5.Chappathi               -Rs.10\n");
+        printf("6.Idly and Dosa           -Rs.10\n");
+        printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&k);
+        int a[]={20,60,50,60,10,10};
+         printf("Quantity: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&n);
+        int tot=a[k-1]*n;
+       printf("Total bill: %d\n",tot);
+    }
+
+void non_veg(){
+    int n;
+    printf("1.Tiffen\n");
+    printf("2.Lunch\n");
+    printf("3.Dinner\n");
+    printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+    
+    scanf("%d",&n);
+    switch(n){
+        case 1: tf1();break;
+        case 2: ln1();break;
+        case 3: dn1();break;
+        default :printf("Invalid Choice");
+    }
+}
+void tf1(){
+        int c,n;
+        printf("1.Idly        -Rs.8\n");
+        printf("2.Dosa        -Rs.15\n");
+        printf("3.Pongal      -Rs.30\n");
+        printf("4.Poori       -Rs.20\n");
+        printf("5.Paniyaaram  -Rs.20\n");
+        printf("6.Chappathi   -Rs.10\n");
+        printf("7.Idiyappam   -Rs.30\n");
+        printf("8.Omelette    -Rs.15\n");
+        printf("9.Halfboil    -Rs.15\n");
+        printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&c);
+        int a[]={8,15,30,20,20,10,30,15,15};
+         printf("Quantity: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&n);
+         int tot=a[c-1]*n;
+        printf("Total bill: %d\n",tot);
+    }
+void ln1(){
+        int c,n;
+        printf("1.Meals                   -Rs.90\n");
+        printf("2.Mutton biriyani         -Rs.160\n");
+        printf("3.Chicken biriyani        -Rs.130\n");
+        printf("4.Fish biriyani           -Rs.180\n");
+        printf("5.Chicken noodles         -Rs.90\n");
+        printf("6.Chicken rice            -Rs.90\n");
+        printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&c);
+        int a[]={90,160,130,180,90,90};
+         printf("Quantity: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&n);
+        int tot=a[c-1]*n;
+        printf("Total bill: %d\n",tot);
+    }
+void dn1(){
+        int c,n;
+        printf("1.Parotta                 -Rs.20\n");
+        printf("2.Naan                    -Rs.60\n");
+        printf("3.Kothu parotta           -Rs.70\n");
+        printf("4.Beef biriyani           -Rs.90\n");
+        printf("5.Chappathi               -Rs.10\n");
+        printf("6.Idly and Dosa           -Rs.10\n");
+        printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&c);
+        int a[]={20,60,70,90,10,10};
+         printf("Quantity: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&n);
+        int tot=a[c-1]*n;
+        printf("Total bill: %d\n",tot);
+}
+
+void des(){
+        int c,n;
+        printf("1.Ice-creams              -Rs.15\n");
+        printf("2.Falooda                 -Rs.130\n");
+        printf("3.Brownies                -Rs.140\n");
+        printf("4.Wafer                   -Rs.50\n");
+        printf("5.Cakes and cupcakes      -Rs.20\n");
+        printf("Enter your choice: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&c);
+        int a[]={15,130,140,50,20};
+         printf("Quantity: \a\a\a\a\a\a\a\a\a");
+        scanf("%d",&n);
+        int tot=a[c-1]*n;
+        printf("Total bill: %d\n",tot);
+}
